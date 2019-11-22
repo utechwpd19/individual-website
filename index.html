@@ -1,0 +1,199 @@
+<html>
+<head>
+<link rel="shortcut icon" href="capture.ico" type="image/x-icon"/>
+<title>Welcome to UTech Ja</title>
+</head>
+<style>
+ ul{
+        list-style: square inside;
+    }
+    thead{
+        font-family: "century gothic",sans-serif;
+        font-size: 25px;
+        font-weight:bold;
+        color: #0e034d;
+    } 
+    tbody{
+        font-family:"century gothic",sans-serif; 
+        line-height: 25px;
+        color: #E7E01A;
+    }
+	.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+    .right{
+        width: 850px ;
+        height: 400px;
+        padding-left: 20px;
+    }
+    .left{
+        padding-right: 20px;
+        color: #FFDF00;
+        background-color: #0e034d;
+    }
+    ul.dashed{
+        list-style: none;
+    }
+    ul.dashed > li{
+        margin-left: 5px;
+    }
+    ul.dashed > li::before{
+        content: " - ";
+        margin-left: 5px;
+		}
+			.menu{
+			width:91%; 
+			height:40px;
+			background-color:#2B5FF3;
+			margin-left: -150px;
+			padding-left: 275px
+			}
+			.menu a{
+			float:left;
+			display:block;
+			color:yellow;
+			text-align:left;
+			text-decoration: none;
+			padding:10px 32px;
+			font-size:15px;
+		}
+		.menu a:hover{
+				background-color:#000000;
+				color:white;
+				}
+		.menu a.active{
+				background-color:#E7E01A;
+				color:blue;
+				}
+.slider-holder {
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder {
+    width: 2400px;
+    height: 400px;
+    clear: both;
+    position: relative;
+    
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slider-image {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+#slider-image-1:target ~ .image-holder {
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder {
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder {
+    left: -1600px;
+}
+
+.button-holder {
+    position: relative;
+    top: -20px;
+}
+
+
+.slider-change {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color:  #0e034d;
+}
+td{
+    padding-left: 20px;
+}
+</style>
+<body>
+<img src="capture.png" align="center" class="center">
+<tbody>
+<tr align="left">
+<td style="garamond">
+<div class = "menu">
+<a class="active" href="https://www.utech.edu.jm/"> Home </a> 
+<a href = "https://www.utech.edu.jm/"> About Utech, ja </a> 
+<a href = "https://www.utech.edu.jm/"> Amissions </a>
+<a href = "https://www.utech.edu.jm/"> Academics </a> 
+<a href = "https://www.utech.edu.jm/"> Campus Experience </a>
+<a href = "https://www.utech.edu.jm/"> Alumni </a>
+</div>
+<br><br>
+        <table align="center" border="1" frame="void" rules="none">
+            <thead>
+                <th align="center" colspan="2">
+                    <b>Information for current Students</b>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="left">
+                        <p>Academic Resources</p>
+                        <ul class="dashed">
+                            <li>Handbook</li>
+                                <ul>
+                                    <li type="circle">Undergrad</li>
+                                    <li type="circle">Graduate</li>
+                                </ul>
+                            <li>Module Selection Guide</li>
+                        </ul>
+                        <p>Student Servies</p>
+                        <ul class="dashed">    
+                            <li>Accomodation</li>
+                            <li>Admission</li>
+                            <li>Financial Aid</li>
+                            <li>Graduation</li>
+                            <li>Medical Center</li>
+                        </ul>
+                        <p>Online Application</p>
+                        <ul class="dashed">
+                            <li>Add/Drop</li>
+                            <li><a href="page 2.html">Boarding</a></li>
+                            <li>Medical Center Appoinment</li>
+                            <li>Fee payment</li>
+							</ul>    
+                        </ul>
+                    </td>
+                    <td class="right">
+                        <div class="slider-holder">
+                                <span id="slider-image-1"></span>
+                                <span id="slider-image-2"></span>
+                                <span id="slider-image-3"></span>
+                                <div class="image-holder">
+                                    <img src="image1.jpg" class="slider-image"/>
+                                    <img src="image2.jpg" class="slider-image"/>
+                                    <img src="image3.jpg" class="slider-image"/>
+                                </div>
+                                <div class="button-holder">
+                                    <a href="#slider-image-1" class="slider-change"></a>
+                                    <a href="#slider-image-2" class="slider-change"></a>
+                                    <a href="#slider-image-3" class="slider-change"></a>
+                                </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
